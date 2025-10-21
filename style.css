@@ -2,14 +2,16 @@
 
 html {
     font-family: "Inter", sans-serif;
+    color:white;
 }
 
 /* GRADIENT BY MANUEL PINTO https://codepen.io/P1N2O/pen/pyBNzX */
 
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #000000, #303030, #7e7e7e);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
+    
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -41,15 +43,16 @@ main {
 }
 
 main h1 {
-    justify-content: center;
-    display: flex;
-    margin-bottom: 100px;
+    font-size: 100px;
+    font-weight: bold;
+    background: linear-gradient(to right, #00ffff, #ff9100);
+    background-clip: text;
+    color: transparent;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    color: white;
 }
 
 .statuses {
@@ -70,18 +73,74 @@ table th, table td {
 }
 
 table:first-of-type {
-    margin-bottom: 100px;
     width: 90%;
 }
 
-ul {
-    display: flex;
-    flex-direction: row;  
-    justify-content: center;
-    align-items: center;
-    gap: 10px;            
-    list-style: none;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(to right, #00ffff, #ff9100);
+    background-clip: text;
+    color: transparent;
+}
+
+.other-stuff {
+    width: 90%;
+    max-width: 850px;
+    text-align: left;
+    margin: 1.5rem auto .1rem auto;
+    background: linear-gradient(to left, #00ffff, #ff9100);
+    background-clip: text;
+    color: transparent;
+    background-position: 50% 0%;
+}
+
+.projects {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px; 
+}
+
+.status-table {
+    width: 90%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px; 
+}
+
+.social-links {
+    width: 90%;
+    max-width: 810px;
+    text-align: left; 
+    font-size: 20px;
+}
+
+.social-links li {
+    margin: 8px 0;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+td a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+td a:hover {
+    opacity: 0.8;
+}
+
+.github-pages {
+    color:white;
+    font-size: 17px;
 }
