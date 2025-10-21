@@ -110,6 +110,16 @@ h2 {
     transform: scale(1.02); 
 }
 
+.status-table {
+width: 100%;
+max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px; 
+  padding-top: 4px;
+}
+
 .social-links {
     width: 90%;
     list-style: none;
