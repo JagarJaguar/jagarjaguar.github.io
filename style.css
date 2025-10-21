@@ -152,14 +152,20 @@ td a:hover {
 .github-pages {
     color:white;
     font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .font-awesome {
     color:white;
     font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .web-source {
     color:white;
     font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
 }
