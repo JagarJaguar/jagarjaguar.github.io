@@ -74,7 +74,6 @@ table th, table td {
 }
 
 table:first-of-type {
-    width: 90%;
     margin-bottom: 20px;
 }
 
@@ -111,13 +110,15 @@ h2 {
 }
 
 .status-table {
-width: 100%;
+width: auto !important;
 max-width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px; 
   padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .social-links {
