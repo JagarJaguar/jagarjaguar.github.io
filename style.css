@@ -43,6 +43,7 @@ main {
 }
 
 main h1 {
+    margin-top: 0;
     font-size: 100px;
     font-weight: bold;
     background: linear-gradient(to right, #00ffff, #ff9100);
