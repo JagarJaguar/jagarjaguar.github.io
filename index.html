@@ -12,6 +12,26 @@
 
         <link rel="stylesheet" href="style.css" />
     </head>
+
+        <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const discordLink = document.getElementById("discord-link");
+
+    discordLink.addEventListener("click", async (e) => {
+        e.preventDefault(); 
+        try {
+        await navigator.clipboard.writeText("jagar");
+        discordLink.classList.add("copied");
+
+        
+        setTimeout(() => discordLink.classList.remove("copied"), 1500);
+        } catch (err) {
+        console.error("Clipboard copy failed:", err);
+        }
+    });
+    });
+    </script>
+
     <body>
         <main>
             <h1 class="main-header">hi there.</h1>
@@ -67,6 +87,11 @@
                         rel="noopener noreferrer">
                         <i class="fa-brands fa-x-twitter"></i> Twitter
                         (X)</a></li>
+                <li>
+                    <a href="#" id="discord-link">
+                        <i class="fa-brands fa-discord"></i> jagar
+                    </a>
+                </li>
             </ul>
         </main>
 
