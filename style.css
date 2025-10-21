@@ -66,7 +66,6 @@ table {
     margin-right: auto;
     word-wrap: break-word;
     table-layout: fixed;
-    max-width: 900px;
 }
 
 table th, table td {
@@ -112,7 +111,6 @@ h2 {
 
 .status-table {
 width: auto !important;
-max-width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,12 +118,21 @@ max-width: 1000px;
   padding-top: 4px;
   padding-left: 4px;
   padding-right: 4px;
+  flex-wrap: wrap;
+}
+
+.status-table tr{
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-links {
     width: 90%;
     list-style: none;
-    max-width: 930px;
+    max-width: 950px;
     text-align: left; 
     font-size: 20px;
 }
