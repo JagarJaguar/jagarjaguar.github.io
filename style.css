@@ -53,6 +53,7 @@ main h1 {
 footer {
     text-align: center;
     padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .statuses {
@@ -74,6 +75,7 @@ table th, table td {
 
 table:first-of-type {
     width: 90%;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -86,7 +88,7 @@ h2 {
 
 .other-stuff {
     width: 90%;
-    max-width: 850px;
+    max-width: 900px;
     text-align: left;
     margin: 1.5rem auto .1rem auto;
     background: linear-gradient(to left, #00ffff, #ff9100);
@@ -95,23 +97,30 @@ h2 {
     background-position: 50% 0%;
 }
 
-.projects {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px; 
+.projects,
+.status-table {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out; 
 }
 
-.status-table {
-    width: 90%;
-    max-width: 900px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px; 
+.projects:hover,
+.status-table:hover {
+    transform: scale(1.02); 
 }
 
 .social-links {
     width: 90%;
-    max-width: 810px;
+    list-style: none;
+    max-width: 930px;
     text-align: left; 
     font-size: 20px;
+}
+
+.social-links li + li {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 8px;
 }
 
 .social-links li {
@@ -141,6 +150,16 @@ td a:hover {
 }
 
 .github-pages {
+    color:white;
+    font-size: 17px;
+}
+
+.font-awesome {
+    color:white;
+    font-size: 17px;
+}
+
+.web-source {
     color:white;
     font-size: 17px;
 }
