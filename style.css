@@ -153,16 +153,6 @@ width: auto !important;
     transition: 0.3s;
 }
 
-/* FOR DISCORD */
-.social-links {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;
-}
-/* FOR DISCORD */
-
-
 .social-links a:hover {
     opacity: 0.8;
 }
@@ -177,18 +167,6 @@ td a {
 
 td a:hover {
     opacity: 0.8;
-}
-
-#discord-link {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-  transition: transform 0.15s ease;
-}
-
-#discord-link:hover {
-  transform: scale(1.05);
-  opacity: 0.85;
 }
 
 #discord-link.copied::after {
