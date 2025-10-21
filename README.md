@@ -1,2 +1,2 @@
-# my website :p 
+# my website 
 [jagarjaguar.github.io](https://jagarjaguar.github.io/)
