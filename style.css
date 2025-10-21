@@ -203,6 +203,13 @@ td a:hover {
     text-decoration: none;
 }
 
+.stat-badges {
+    color:white;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .web-source {
     color:white;
     font-size: 17px;
