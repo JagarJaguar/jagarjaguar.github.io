@@ -2,7 +2,7 @@
 
 html {
     font-family: "Inter", sans-serif;
-    color:white;
+    color: white;
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -14,7 +14,7 @@ body {
     background: linear-gradient(45deg, #04070a, #0a0f14, #101820, #060b0f);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    
+
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -54,6 +54,12 @@ main h1 {
     color: transparent;
 }
 
+@media (max-width: 600px) {
+  .main-header {
+    padding-top: 40px;   /* extra spacing on phones */
+  }
+}
+
 footer {
     text-align: center;
     padding: 10px;
@@ -71,7 +77,8 @@ table {
     table-layout: fixed;
 }
 
-table th, table td {
+table th,
+table td {
     padding: 8px;
     text-align: center;
 }
@@ -100,52 +107,63 @@ h2 {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
 }
 
 .projects:hover,
 .status-table:hover {
-    transform: scale(1.02); 
+    transform: scale(1.02);
 }
+
+@media (max-width: 600px) {
+
+    .projects,
+    .status-table {
+        width: 90% !important;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+}
+
 
 .status-table {
-width: auto !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px; 
-  padding-top: 4px;
-  padding-left: 4px;
-  padding-right: 4px;
-  flex-wrap: wrap;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    flex-wrap: wrap;
 }
 
-.status-table tr{
-  display: flex;
-  flex-wrap: wrap; 
-  gap: 12px;
-  align-items: center;
-  justify-content: center;
+.status-table tr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-links {
     width: 90%;
     list-style: none;
     max-width: 950px;
-    text-align: left; 
+    text-align: left;
     font-size: 20px;
 }
 
-.social-links li + li {
+.social-links li+li {
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     padding-top: 8px;
 }
 
 @media (max-width: 600px) {
-  .social-links {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+    .social-links {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 .social-links li {
@@ -176,34 +194,34 @@ td a:hover {
 }
 
 #discord-link.copied::after {
-  content: " (copied!)";
-  color: #ffffff;
-  font-size: 0.9em;
+    content: " (copied!)";
+    color: #ffffff;
+    font-size: 0.9em;
 }
 
 .github-pages {
-    color:white;
+    color: white;
     font-size: 17px;
     font-weight: bold;
     text-decoration: none;
 }
 
 .font-awesome {
-    color:white;
+    color: white;
     font-size: 17px;
     font-weight: bold;
     text-decoration: none;
 }
 
 .stat-badges {
-    color:white;
+    color: white;
     font-size: 17px;
     font-weight: bold;
     text-decoration: none;
 }
 
 .web-source {
-    color:white;
+    color: white;
     font-size: 17px;
     font-weight: bold;
     text-decoration: none;
