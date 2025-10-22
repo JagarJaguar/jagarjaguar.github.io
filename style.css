@@ -9,34 +9,14 @@ html {
     overflow-x: hidden;
 }
 
-/* GRADIENT BY MANUEL PINTO https://codepen.io/P1N2O/pen/pyBNzX - Modified by me*/
-
 body {
-    background: linear-gradient(45deg, #04070a, #0a0f14, #1a2632, #060b0f);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-
+    background-color: #080c10;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     margin: 0;
     height: 100vh;
 }
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* GRADIENT BY MANUEL PINTO https://codepen.io/P1N2O/pen/pyBNzX - Modified by me*/
 
 main {
     flex: 1;
