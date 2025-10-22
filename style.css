@@ -6,6 +6,7 @@ html {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    overscroll-behavior-y: none;
 }
 
 /* GRADIENT BY MANUEL PINTO https://codepen.io/P1N2O/pen/pyBNzX - Modified by me*/
@@ -74,10 +75,6 @@ table {
 table th, table td {
     padding: 8px;
     text-align: center;
-}
-
-table:first-of-type {
-    margin-bottom: 20px;
 }
 
 h2 {
