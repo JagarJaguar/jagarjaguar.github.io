@@ -173,6 +173,13 @@ h2 {
   }
 }
 
+@media (max-width: 600px) {
+  /* Target the VS Code badge only */
+  .status-table img[alt="intellij"] {
+    transform: scale(0.9);
+  }
+}
+
 .social-links li {
     margin: 8px 0;
 }
