@@ -207,29 +207,31 @@ td a:hover {
 }
 
 .github-pages {
-    color: white;
+    color: rgb(35, 79, 255);
     font-size: 17px;
-    font-weight: bold;
     text-decoration: none;
 }
 
 .font-awesome {
-    color: white;
+    color: rgb(35, 79, 255);
     font-size: 17px;
-    font-weight: bold;
     text-decoration: none;
 }
 
 .stat-badges {
-    color: white;
+    color: rgb(35, 79, 255);
     font-size: 17px;
-    font-weight: bold;
     text-decoration: none;
 }
 
 .web-source {
-    color: white;
+    color: rgb(35, 79, 255);
     font-size: 17px;
-    font-weight: bold;
+    text-decoration: none;
+}
+
+.jagar-link {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
     text-decoration: none;
 }
