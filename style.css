@@ -5,6 +5,7 @@ html {
     color:white;
     height: 100%;
     width: 100%;
+    overscroll-behavior-x: none;
 }
 
 /* GRADIENT BY MANUEL PINTO https://codepen.io/P1N2O/pen/pyBNzX - Modified by me*/
