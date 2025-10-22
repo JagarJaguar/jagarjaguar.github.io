@@ -141,6 +141,13 @@ width: auto !important;
     padding-top: 8px;
 }
 
+@media (max-width: 600px) {
+  .social-links {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 .social-links li {
     margin: 8px 0;
 }
