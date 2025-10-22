@@ -135,6 +135,9 @@ h2 {
     }
 }
 
+.project-text {
+    margin-top: 24px;
+}
 
 .status-table {
     width: auto;
