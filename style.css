@@ -147,7 +147,6 @@ h2 {
 }
 
 @media (max-width: 1000px) {
-
     .projects,
     .status-table {
         width: 90% !important;
