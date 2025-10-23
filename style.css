@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html, body {
+html,
+body {
     font-family: "Inter", sans-serif;
     color: white;
     height: 100%;
@@ -39,7 +40,7 @@ body {
 
 @media (hover: none) and (pointer: coarse) {
     body {
-        background: none !important; 
+        background: none !important;
         background-size: cover !important;
         background-color: #060b0f !important;
         animation: none !important;
@@ -75,10 +76,10 @@ main h1 {
 }
 
 @media (max-width: 600px) {
-  .main-header {
-    padding-top: 40px;
-    text-align: center;
-  }
+    .main-header {
+        padding-top: 40px;
+        text-align: center;
+    }
 }
 
 footer {
@@ -88,9 +89,9 @@ footer {
 }
 
 @media (max-width: 600px) {
-  footer {
-    background-color: rgba(0, 0, 0, 0);
-  }
+    footer {
+        background-color: rgba(0, 0, 0, 0);
+    }
 }
 
 .statuses {
@@ -147,9 +148,14 @@ h2 {
 }
 
 @media (max-width: 1000px) {
-    .projects,
     .status-table {
         width: 90% !important;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .projects {
+        max-width: 90% !important;
         margin: 0 auto;
         box-sizing: border-box;
     }
@@ -182,9 +188,11 @@ h2 {
 .social-links {
     width: 90%;
     list-style: none;
-    max-width: 950px;
+    max-width: 920px;
     text-align: left;
     font-size: 18px;
+    padding-left: 0;
+    margin: 0 auto;
 }
 
 .social-links li+li {
@@ -197,12 +205,6 @@ h2 {
         padding-left: 10px;
         padding-right: 10px;
     }
-}
-
-@media (max-width: 600px) {
-  .status-table img {
-    transform: scale(0.9);
-  }
 }
 
 .social-links li {
@@ -221,8 +223,8 @@ h2 {
 }
 
 .status-table img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 td a {
