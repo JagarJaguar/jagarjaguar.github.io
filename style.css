@@ -6,7 +6,6 @@ html, body {
     color: white;
     height: 100%;
     width: 100%;
-    background-size: cover;
     overflow-x: hidden;
 }
 
@@ -38,7 +37,7 @@ body {
 
 /* GRADIENT BY MANUEL PINTO https://codepen.io/P1N2O/pen/pyBNzX - Modified by me*/
 
-@media (max-width: 600px) {
+@media (hover: none) and (pointer: coarse) {
     body {
         background: none !important; 
         background-size: cover !important;
