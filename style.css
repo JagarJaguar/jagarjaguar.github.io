@@ -110,6 +110,10 @@ table td {
     text-align: center;
 }
 
+.status-table tr {
+    gap: 0px !important;
+}
+
 h2 {
     font-size: 40px;
     font-weight: bold;
