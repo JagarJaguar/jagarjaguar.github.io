@@ -232,6 +232,11 @@ h2 {
     opacity: 0.8;
 }
 
+.status-table img {
+  max-width: 100%;
+  height: auto;
+}
+
 td a {
     color: white;
     text-decoration: none;
