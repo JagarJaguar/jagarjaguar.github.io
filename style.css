@@ -20,12 +20,7 @@ body {
     flex-direction: column;
     margin: 0;
     height: 100vh;
-    overflow-x: hidden;
     min-height: 100vh;
-}
-
-@supports (min-height: 100dvh) {
-  body { min-height: 100dvh; } 
 }
 
 @keyframes gradient {
