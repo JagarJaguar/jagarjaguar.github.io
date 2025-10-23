@@ -4,7 +4,7 @@
 html {
     font-family: "Inter", sans-serif;
     color: white;
-    height: 100%;
+    height: auto;
     width: 100%;
     overflow-x: hidden;
 }
@@ -21,6 +21,11 @@ body {
     margin: 0;
     height: 100vh;
     overflow-x: hidden;
+    min-height: 100vh;
+}
+
+@supports (min-height: 100dvh) {
+  body { min-height: 100dvh; } 
 }
 
 @keyframes gradient {
