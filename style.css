@@ -277,3 +277,17 @@ td a:hover {
     font-size: 17px;
     text-decoration: none;
 }
+
+/* Mobile table fix */
+@media (max-width: 600px) {
+    .projects tr {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+    }
+    
+    .projects td {
+        display: block;
+    }
+}

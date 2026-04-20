@@ -1,140 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="theme-color" content="#000000">
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1.0" />
-        <title>Jagar's Den</title>
-        <link rel="icon" href="favicon.ico" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
-        <link rel="stylesheet" href="style.css" />
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jagar's Den</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
-    <script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<script>
     document.addEventListener("DOMContentLoaded", () => {
-    const discordLink = document.getElementById("discord-link");
+        const discordLink = document.getElementById("discord-link");
 
-    discordLink.addEventListener("click", async (e) => {
-        e.preventDefault(); 
-        try {
-        await navigator.clipboard.writeText("jagar");
-        discordLink.classList.add("copied");
+        discordLink.addEventListener("click", async (e) => {
+            e.preventDefault();
+            try {
+                await navigator.clipboard.writeText("jagar");
+                discordLink.classList.add("copied");
 
-        
-        setTimeout(() => discordLink.classList.remove("copied"), 1500);
-        } catch (err) {
-        console.error("Clipboard copy failed:", err);
-        }
+
+                setTimeout(() => discordLink.classList.remove("copied"), 1500);
+            } catch (err) {
+                console.error("Clipboard copy failed:", err);
+            }
+        });
     });
-    });
-    </script>
+</script>
 
-    <body>
-        <main>
-            <h1 class="main-header">hi there.</h1>
-            <p class="about-me">My name is Jagar (or Ashton). Don't really know what to use this for so I am putting random stuff on here for now.</p>
+<body>
+    <main>
+        <h1 class="main-header">hi there.</h1>
+        <p class="about-me">My name is Jagar (or Ashton). Don't really know what to use this for so I am putting random
+            stuff on here for now.</p>
 
-            <table class="status-table">
+        <table class="status-table">
+            <tr>
+                <th><img style="height: 30px"
+                        src="https://api.statusbadges.me/badge/status/416760477516038197?simple=true" alt="status"></th>
+                <th><img img style="height: 30px" src="https://api.statusbadges.me/badge/playing/416760477516038197"
+                        alt="playing"></th>
+                <th><img img style="height: 30px" src="https://api.statusbadges.me/badge/vscode/416760477516038197"
+                        alt="vscode"></th>
+                <th><img img style="height: 30px" src="https://api.statusbadges.me/badge/intellij/416760477516038197"
+                        alt="intellij">
+                </th>
+            </tr>
+        </table>
+
+        <h2 class="project-text">Projects</h2>
+
+        <table class="projects">
+            <tbody>
                 <tr>
-                    <th><img style="height: 30px"
-                            src="https://api.statusbadges.me/badge/status/416760477516038197?simple=true"
-                            alt="status"></th>
-                    <th><img img style="height: 30px"
-                            src="https://api.statusbadges.me/badge/playing/416760477516038197"
-                            alt="playing"></th>
-                    <th><img img style="height: 30px"
-                            src="https://api.statusbadges.me/badge/vscode/416760477516038197"
-                            alt="vscode"></th>
-                    <th><img img style="height: 30px"
-                            src="https://api.statusbadges.me/badge/intellij/416760477516038197"
-                            alt="intellij">
-                    </th>
+                    <td>
+                        <a href="https://startup.jagarchat.com/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-comments"></i>
+                            JagarChat</a>
+                    </td>
+                    <td>
+                        <a href="https://github.com/JagarJaguar/rblxusernamesniper" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-solid fa-gavel"></i>
+                            Roblox Username Sniper</a>
+                    </td>
+                    <td>
+                        <a href="#" tabindex="-1">
+                            <i class="fa-solid fa-envelope"></i>
+                            Email Cooker (coming soon)™
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://lucid.app/lucidchart/e1a24560-4156-4abf-a88d-04c175ea83d9/view" target="_blank">
+                            <i class="fa-solid fa-server"></i>
+                            Homelab
+                        </a>
+                    </td>
                 </tr>
-            </table>
+            </tbody>
+        </table>
 
-            <h2 class="project-text">Projects</h2>
+        <h2 class="other-stuff">Other Stuff</h2>
 
-            <table class="projects">
-                <tbody>
-                    <tr>
-                        <td>
-                            <a href="https://startup.jagarchat.com/"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                <i class="fa-solid fa-comments"></i>
-                                JagarChat</a>
-                        </td>
-                        <td>
-                            <a href="https://github.com/JagarJaguar/rblxusernamesniper"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                <i class="fa-solid fa-gavel"></i>
-                                Roblox Username Sniper</a>
-                        </td>
-                        <td>
-                            <a href="#" tabindex="-1">
-                                <i class="fa-solid fa-envelope"></i>
-                                Email Cooker (coming soon)™
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <ul class="social-links">
+            <li><a href="https://github.com/JagarJaguar" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.youtube.com/@Jagarr" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-youtube"></i> YouTube</a></li>
+            <li><a href="https://steamcommunity.com/id/Jagarrr/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-steam"></i></i> Steam</a></li>
+            <li><a href="https://x.com/jagarjaguar" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-x-twitter"></i> Twitter
+                    (X)</a></li>
+            <li><a href="https://www.instagram.com/ashton.jagar/#" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i></i> Instagram</a></li>
+            <li>
+                <a href="#" id="discord-link">
+                    <i class="fa-brands fa-discord"></i> jagar
+                </a>
+            </li>
+            <li><a href="https://pcpartpicker.com/user/THEJAGAR/saved/BBGtQ7" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-computer"></i> Setup #1</a></li>
+            </li>
+            <li><a href="https://pcpartpicker.com/user/THEJAGAR/saved/LbnTzy" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-computer"></i> Setup #2</a></li>
+        </ul>
+    </main>
 
-            <h2 class="other-stuff">Other Stuff</h2>
-
-            <ul class="social-links">
-                <li><a href="https://github.com/JagarJaguar" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i> GitHub</a></li>
-                <li><a href="https://www.youtube.com/@Jagarr" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa-brands fa-youtube"></i> YouTube</a></li>
-                                <li><a href="https://steamcommunity.com/id/Jagarrr/" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa-brands fa-steam"></i></i> Steam</a></li>
-                <li><a href="https://x.com/jagarjaguar" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa-brands fa-x-twitter"></i> Twitter
-                        (X)</a></li>
-                                <li><a href="https://www.instagram.com/ashton.jagar/#" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa-brands fa-instagram"></i></i> Instagram</a></li>
-                <li>
-                    <a href="#" id="discord-link">
-                        <i class="fa-brands fa-discord"></i> jagar
-                    </a>
-                </li>
-                                <li><a href="https://pcpartpicker.com/user/THEJAGAR/saved/BBGtQ7" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa-solid fa-computer"></i> PC #1</a></li>
-                                </li>
-                                <li><a href="https://pcpartpicker.com/user/THEJAGAR/saved/LbnTzy" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="fa-solid fa-computer"></i> PC #2</a></li>
-            </ul>
-        </main>
-
-        <footer>
-            Website made by <a href="https://refsheet.net/Jagar/jagar"
-                target="_blank"
-                rel="noopener noreferrer" class="jagar-link">Jagar</a>. 
-                Hosting by <a href="https://pages.github.com/"
-                target="_blank"
-                rel="noopener noreferrer" class="github-pages">GitHub Pages</a>.
-            Icons by <a href="https://fontawesome.com/" target="_blank"
-                rel="noopener noreferrer" class="font-awesome">FontAwesome</a>.
-            StatusBadges by <a href="https://advaith.io/" target="_blank" rel="noopener noreferrer"
+    <footer>
+        Website made by <a href="https://refsheet.net/Jagar/jagar" target="_blank" rel="noopener noreferrer"
+            class="jagar-link">Jagar</a>.
+        Hosting by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer"
+            class="github-pages">GitHub Pages</a>.
+        Icons by <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer"
+            class="font-awesome">FontAwesome</a>.
+        StatusBadges by <a href="https://advaith.io/" target="_blank" rel="noopener noreferrer"
             class="stat-badges">Advaith</a>.
-            Website <a
-                href="https://github.com/JagarJaguar/jagarjaguar.github.io"
-                target="_blank"
-                rel="noopener noreferrer" class="web-source">Source Code</a>. 
-        </footer>
-    </body>
+        Website <a href="https://github.com/JagarJaguar/jagarjaguar.github.io" target="_blank" rel="noopener noreferrer"
+            class="web-source">Source Code</a>.
+    </footer>
+</body>
 
 </html>
