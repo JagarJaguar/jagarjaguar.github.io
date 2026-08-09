@@ -91,7 +91,7 @@ const HOMELAB = {
             {
               label: "Storage",
               services: [
-                { name: "3x 18TB XFS array", icon: "seagate" }
+                { name: "3x 18TB XFS array", icon: "ugreen-nas" }
               ]
             }
           ]
