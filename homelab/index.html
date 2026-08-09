@@ -15,17 +15,21 @@
     <script src="homelab.js" defer></script>
 </head>
 
+<nav class="navbar">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/homelab/index.html" class="active">Homelab</a></li>
+        <li><a href="#">About Me</a></li>
+    </ul>
+</nav>
+
 <body>
     <main>
         <h1 class="main-header">my homelab.</h1>
         <p class="about-me">
             Five nodes in my basement currently running <b><span id="service-count">0</span></b> services across
             <b><span id="node-count">0</span></b> machines.
-        </p>
-
-        <p class="hl-back">
-            <a href="../"><i class="fa-solid fa-arrow-left"></i> back home</a>
-        </p>
+        </p>    
 
         <h2 class="hl-heading">Networking</h2>
         <div id="edge" class="hl-edge-wrap"></div>
