@@ -15,7 +15,7 @@ const HOMELAB = {
 
   // The path from the internet down to the switch.
   edge: [
-    { name: "Internet",            icon: "internet",   note: "homelab domain" },
+    { name: "Internet",            icon: "firefox",   note: "homelab domain" },
     { name: "Cloudflare DNS",      icon: "cloudflare", note: "proxied" },
     { name: "Asus RT-AC5300",      icon: "asus",       note: "router" },
     { name: "NETGEAR GS724TPv2",   icon: "netgear",    note: "switch" }
