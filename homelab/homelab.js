@@ -29,27 +29,6 @@ const HOMELAB = {
 
   nodes: [
     {
-      name: "Dell Optiplex Micro 3050",
-      role: "Apps + utilities",
-      specs: ["i5 7500T", "8GB DDR4 SODIMM", "256GB SATA SSD"],
-      platform: ["Linux Mint", "Docker"],
-      groups: [
-        {
-          label: "Docker",
-          services: [
-            { name: "Homepage",  icon: "homepage" },
-            { name: "ConvertX",  icon: "convertx" },
-            { name: "Scrutiny",  icon: "scrutiny" },
-            { name: "Dockpeek",  icon: "dockpeek" },
-            { name: "Mealie",    icon: "mealie" },
-            { name: "Vikunja",   icon: "vikunja" },
-            { name: "Memos",     icon: "memos" }
-          ]
-        }
-      ]
-    },
-
-    {
       name: "Lenovo Thinkstation P620",
       role: "Storage + photos + local AI",
       specs: [
@@ -100,24 +79,27 @@ const HOMELAB = {
     },
 
     {
-      name: "Dell Optiplex Micro 7050",
-      role: "Networking + monitoring",
-      specs: ["i5 6500T", "8GB DDR4 SODIMM", "128GB SATA SSD"],
-      platform: ["Linux Mint", "Docker", "CrowdSec bouncer"],
+      name: "Dell Optiplex Micro 3050",
+      role: "Apps + utilities",
+      specs: ["i5 7500T", "8GB DDR4 SODIMM", "256GB SATA SSD"],
+      platform: ["Linux Mint", "Docker"],
       groups: [
         {
           label: "Docker",
           services: [
-            { name: "Nginx Proxy Manager", icon: "nginx-proxy-manager" },
-            { name: "Pi-hole",             icon: "pi-hole" },
-            { name: "Uptime Kuma",         icon: "uptime-kuma" },
-            { name: "CrowdSec",            icon: "crowdsec" }
+            { name: "Homepage",  icon: "homepage" },
+            { name: "ConvertX",  icon: "convertx" },
+            { name: "Scrutiny",  icon: "scrutiny" },
+            { name: "Dockpeek",  icon: "dockpeek" },
+            { name: "Mealie",    icon: "mealie" },
+            { name: "Vikunja",   icon: "vikunja" },
+            { name: "Memos",     icon: "memos" }
           ]
         }
       ]
     },
 
-    {
+        {
       name: "Dell Optiplex Micro 7020",
       role: "Game servers + media",
       specs: ["i5 14500T", "64GB DDR5 SODIMM", "256GB M.2"],
@@ -150,6 +132,24 @@ const HOMELAB = {
         "Gluetun is the killswitch, VPN is AirVPN.",
         "Prowlarr uses Flaresolverr for some indexers.",
         "Media lives on the P620."
+      ]
+    },
+
+    {
+      name: "Dell Optiplex Micro 7050",
+      role: "Networking + monitoring",
+      specs: ["i5 6500T", "8GB DDR4 SODIMM", "128GB SATA SSD"],
+      platform: ["Linux Mint", "Docker", "CrowdSec bouncer"],
+      groups: [
+        {
+          label: "Docker",
+          services: [
+            { name: "Nginx Proxy Manager", icon: "nginx-proxy-manager" },
+            { name: "Pi-hole",             icon: "pi-hole" },
+            { name: "Uptime Kuma",         icon: "uptime-kuma" },
+            { name: "CrowdSec",            icon: "crowdsec" }
+          ]
+        }
       ]
     }
   ]
