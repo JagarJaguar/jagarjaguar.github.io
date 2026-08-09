@@ -1,0 +1,127 @@
+.ab-card,
+.ab-heading,
+.ab-chips {
+    width: 90%;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+main>.about-me {
+    margin-bottom: 0;
+    
+}
+
+main {
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+h2.ab-heading {
+    text-align: left;
+    margin: 2.2rem auto 1rem auto;
+    background: linear-gradient(to left, var(--hl-cyan, #00ffff), var(--hl-orange, #ff9100));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* --- The photo + card -------------------------------------------- */
+
+.ab-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 1.5rem;
+    padding: 24px;
+    background-color: var(--hl-surface, rgba(255, 255, 255, 0.1));
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* flex: 0 0 auto stops the photo from being squeezed by long text */
+.ab-photo {
+    flex: 0 0 auto;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid var(--hl-line, rgba(255, 255, 255, 0.15));
+    background-color: var(--hl-surface-soft, rgba(255, 255, 255, 0.05));
+}
+
+.ab-text {
+    min-width: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.ab-text p {
+    margin: 0;
+}
+
+.ab-text p+p {
+    margin-top: 14px;
+}
+
+.ab-facts {
+    list-style: none;
+    margin: 18px 0 0 0;
+    padding: 0;
+    font-family: var(--hl-mono, ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace);
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--hl-muted, rgba(255, 255, 255, 0.6));
+}
+
+.ab-facts li {
+    padding: 2px 0;
+}
+
+.ab-facts li::before {
+    content: "- ";
+    color: var(--hl-orange, #ff9100);
+}
+
+.ab-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+}
+
+.ab-chip {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 12px;
+    border: 1px solid var(--hl-line, rgba(255, 255, 255, 0.15));
+    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* --- Small screens ------------------------------------------------------ */
+
+@media (max-width: 700px) {
+    .ab-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 18px;
+    }
+
+    .ab-photo {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .ab-text {
+        font-size: 16px;
+    }
+}
