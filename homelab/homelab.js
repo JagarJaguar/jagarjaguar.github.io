@@ -93,7 +93,8 @@ const HOMELAB = {
             { name: "Dockpeek",  icon: "dockpeek" },
             { name: "Mealie",    icon: "mealie" },
             { name: "Vikunja",   icon: "vikunja" },
-            { name: "Memos",     icon: "memos" }
+            { name: "Memos",     icon: "memos" },
+            { name: "IT-Tools",     icon: "it-tools" }
           ]
         }
       ]
