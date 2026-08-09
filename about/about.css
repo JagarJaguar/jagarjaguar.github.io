@@ -51,6 +51,11 @@ h2.ab-heading {
     border-radius: 10px;
     border: 1px solid var(--hl-line, rgba(255, 255, 255, 0.15));
     background-color: var(--hl-surface-soft, rgba(255, 255, 255, 0.05));
+
+    background-image: url("https://cdn3.emoji.gg/emojis/4088-femboy-flag.png"); /* joke BTW. JOKE! */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .ab-text {
