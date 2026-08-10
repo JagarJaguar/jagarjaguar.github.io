@@ -110,12 +110,13 @@ main h1 {
     margin-bottom: 0;
     padding-inline: 10px;
     text-align: center;
-    font-size: 100px;
+    font-size: clamp(40px, 14vw, 100px);
     font-weight: bold;
     background: linear-gradient(to right, #00ffff, #ff9100);
     background-clip: text;
     color: transparent;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
+    text-wrap: balance;
 }
 
 .about-me {
