@@ -211,7 +211,7 @@ h2.hl-heading {
 }
 
 .hl-chip {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     padding: 3px 10px;
     border: 1px solid var(--hl-line);
@@ -224,7 +224,7 @@ h2.hl-heading {
     margin: 14px 0 0 0;
     padding: 0;
     font-family: var(--hl-mono);
-    font-size: 13px;
+    font-size: 15px;
     color: var(--hl-muted);
 }
 
