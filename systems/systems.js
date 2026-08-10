@@ -3,60 +3,62 @@
    Browse names here: https://dashboardicons.com
 
    A system can have:
-     platform  - chips for the host OS
+     icon      - dashboard-icons name shown next to the title
+     platform  - chips for the host OS (string, or { name, icon })
      specs     - the hardware list
      notes     - anything else worth saying
+
+   If an icon name doesn't exist, it quietly falls back to the first letter.
    ========================================================================== */
 
 const HOMELAB = {
-
-  // The path from the internet down to the switch.
-  edge: [
-    { name: "Internet",            icon: "librewolf",   note: "homelab domain" },
-    { name: "Cloudflare DNS",      icon: "cloudflare", note: "proxied" },
-    { name: "Asus RT-AC5300",      icon: "asus",       note: "router" },
-    { name: "NETGEAR GS724TPv2",   icon: "netgear",    note: "switch" }
-  ],
-
-  // Things that are true of every node.
-  globalNotes: [
-    "Glances runs on every node for the Homepage widget.",
-    "Dockpeek proxy and Scrutiny run on every node."
-  ],
 
   nodes: [
     {
       name: "Corsair 4000D RS PC",
       role: "Home PC",
+      icon: "corsair",
       specs: ["Intel Core i9 14900k", "96GB 6400MHz CL32 DDR5", "2TB WD SN850X", "4TB Crucial P3 Plus", "1TB Samsung 980 Pro",
         "2TB Seagate Barracuda", "Gigabyte Gaming OC RTX 5090"
       ],
-      platform: ["Windows 11 Pro"],
+      platform: [
+        { name: "Windows 11 Pro", icon: "windows-11" }
+      ],
     },
 
     {
       name: "NZXT H5 Flow PC",
       role: "Apartment PC",
+      icon: "nzxt",
       specs: ["Intel Core i5 13400F", "32GB 6000MHz CL36 DDR5", "1TB WD Blue SN850", "2TB Samsung 990 EVO Plus", "1TB Samsung 970 EVO Plus",
-       , "Zotac SFF OC RTX 5070 Ti"
+        "Zotac SFF OC RTX 5070 Ti"
       ],
-      platform: ["Windows 11"],
+      platform: [
+        { name: "Windows 11", icon: "windows-11" }
+      ],
     },
 
     {
       name: "Framework 16",
       role: "Daily Laptop",
+      icon: "framework",
       specs: ["AMD Ryzen AI 7 350", "64GB 5600MHz DDR5 SODIMM", "4TB SN850X", "1TB Patriot Viper 2230 VP4000",
-       , "RTX 5070 8GB"
+        "RTX 5070 8GB"
       ],
-      platform: ["Windows 11 Pro", "Fedora Workstation"],
+      platform: [
+        { name: "Windows 11 Pro", icon: "windows-11" },
+        { name: "Fedora Workstation", icon: "fedora" }
+      ],
     },
 
     {
       name: "Lenovo Thinkpad T480",
       role: "Fun Laptop",
+      icon: "lenovo",
       specs: ["i5 8250U", "16GB 2400MHz DDR4 SODIMM", "256GB Samsung SSD"],
-      platform: ["Arch BTW"],
+      platform: [
+        { name: "Arch BTW", icon: "arch-linux" }
+      ],
     }
   ]
 };
@@ -92,25 +94,6 @@ function icon(name, label) {
   });
   wrap.appendChild(img);
   return wrap;
-}
-
-function renderEdge(list) {
-  const row = el("div", "hl-edge");
-  list.forEach((hop, i) => {
-    const item = el("div", "hl-hop");
-    item.appendChild(icon(hop.icon, hop.name));
-    const text = el("div", "hl-hop-text");
-    text.appendChild(el("span", "hl-hop-name", hop.name));
-    if (hop.note) text.appendChild(el("span", "hl-hop-note", hop.note));
-    item.appendChild(text);
-    row.appendChild(item);
-    if (i < list.length - 1) {
-      const arrow = el("span", "hl-arrow", "\u203A");
-      arrow.setAttribute("aria-hidden", "true");
-      row.appendChild(arrow);
-    }
-  });
-  return row;
 }
 
 function renderService(service) {
@@ -153,17 +136,31 @@ function renderGuest(guest) {
   return box;
 }
 
+/* A platform entry can be "Windows 11" or { name: "Windows 11", icon: "windows" } */
+function renderChip(platform) {
+  const name = typeof platform === "string" ? platform : platform.name;
+  const chip = el("li", "hl-chip");
+  if (typeof platform !== "string" && platform.icon) {
+    chip.appendChild(icon(platform.icon, name));
+  }
+  chip.appendChild(el("span", null, name));
+  return chip;
+}
+
 function renderNode(node) {
   const card = el("article", "hl-node");
 
   const head = el("header", "hl-node-head");
-  head.appendChild(el("h3", "hl-node-name", node.name));
-  if (node.role) head.appendChild(el("p", "hl-node-role", node.role));
+  if (node.icon) head.appendChild(icon(node.icon, node.name));
+  const headText = el("div", "hl-node-head-text");
+  headText.appendChild(el("h3", "hl-node-name", node.name));
+  if (node.role) headText.appendChild(el("p", "hl-node-role", node.role));
+  head.appendChild(headText);
   card.appendChild(head);
 
   if (node.platform && node.platform.length) {
     const chips = el("ul", "hl-chips");
-    node.platform.forEach(p => chips.appendChild(el("li", "hl-chip", p)));
+    node.platform.forEach(p => chips.appendChild(renderChip(p)));
     card.appendChild(chips);
   }
 
@@ -203,11 +200,6 @@ function countServices(node) {
 }
 
 function build() {
-  document.getElementById("edge").appendChild(renderEdge(HOMELAB.edge));
-
-  const globals = document.getElementById("global-notes");
-  HOMELAB.globalNotes.forEach(n => globals.appendChild(el("li", null, n)));
-
   const grid = document.getElementById("nodes");
   HOMELAB.nodes.forEach(n => grid.appendChild(renderNode(n)));
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="theme-color" content="#000000">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homelab | Jagar's Den</title>
+    <title>Systems | Jagar's Den</title>
     <link rel="icon" href="../favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
@@ -15,29 +15,21 @@
     <script src="systems.js" defer></script>
 </head>
 
-<nav class="navbar">
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/homelab/index.html">Homelab</a></li>
-        <li><a href="/systems/index.html" class="active">Systems</a></li>
-        <li><a href="/about/index.html">About Me</a></li>
-    </ul>
-</nav>
-
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/homelab/index.html">Homelab</a></li>
+            <li><a href="/systems/index.html" class="active">Systems</a></li>
+            <li><a href="/about/index.html">About Me</a></li>
+        </ul>
+    </nav>
+
     <main>
         <h1 class="main-header">my systems.</h1>
         <p class="about-me">
-            <b><span id="node-count">0</span></b> operational systems/computers (not including the <a href="../homelab/index.html" class="homelab-link">homelab</a>).
-        </p>    
-
-        <h2 class="hl-heading">Networking</h2>
-        <div id="edge" class="hl-edge-wrap"></div>
-
-        <div class="hl-global">
-            <h3>Everywhere</h3>
-            <ul id="global-notes"></ul>
-        </div>
+            <b><span id="node-count">0</span></b> main operational systems/computers (not including the <a href="../homelab/index.html" class="homelab-link">homelab</a>).
+        </p>
 
         <h2 class="hl-heading">Current Systems</h2>
         <div id="nodes" class="hl-nodes"></div>

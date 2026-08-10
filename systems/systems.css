@@ -438,3 +438,40 @@ h2.hl-heading:first-of-type {
     font-size: 17px;
     text-decoration: none;
 }
+
+/* --- Icons in node headers and platform chips ------------------------- */
+
+.hl-node-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hl-node-head .hl-icon {
+    flex: 0 0 34px;
+    width: 34px;
+    height: 34px;
+}
+
+.hl-node-head-text {
+    min-width: 0;
+}
+
+.hl-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.hl-chip .hl-icon {
+    flex: 0 0 15px;
+    width: 15px;
+    height: 15px;
+}
+
+/* Keep everything pinned under the navbar instead of drifting to
+   the middle now that the page is shorter. */
+body,
+main {
+    justify-content: flex-start;
+}
