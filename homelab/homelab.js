@@ -13,7 +13,7 @@
 
 const HOMELAB = {
 
-  // The path from the internet down to the switch.
+  // The path from the internet to the switch.
   edge: [
     { name: "Internet",            icon: "librewolf",   note: "homelab domain" },
     { name: "Cloudflare DNS",      icon: "cloudflare", note: "proxied" },
@@ -21,7 +21,7 @@ const HOMELAB = {
     { name: "NETGEAR GS724TPv2",   icon: "netgear",    note: "switch" }
   ],
 
-  // Things that are true of every node.
+  // Things that are true about all nodes.
   globalNotes: [
     "Glances runs on every node for the Homepage widget.",
     "Dockpeek proxy and Scrutiny run on every node."
