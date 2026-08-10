@@ -369,19 +369,6 @@ a.hl-service:focus-visible {
     }
 }
 
-@media (prefers-reduced-motion: reduce) {
-
-    .hl-node,
-    .hl-service {
-        transition: none;
-    }
-
-    .hl-node:hover,
-    a.hl-service:hover {
-        transform: none;
-    }
-}
-
 main > .about-me {
     margin-bottom: 0;
 }
