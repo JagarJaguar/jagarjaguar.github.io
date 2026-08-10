@@ -432,3 +432,9 @@ main > .about-me {
 h2.hl-heading:first-of-type {
     margin-top: 1.4rem;
 }
+
+.homelab-link {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    text-decoration: none;
+}

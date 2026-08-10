@@ -42,7 +42,7 @@ const HOMELAB = {
       platform: ["Proxmox VE"],
       guests: [
         {
-          name: "Windows 11",
+          name: "Windows 11 Pro",
           icon: "windows-11",
           sub: "VM",
           groups: [

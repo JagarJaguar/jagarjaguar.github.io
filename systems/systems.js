@@ -26,129 +26,37 @@ const HOMELAB = {
 
   nodes: [
     {
-      name: "Lenovo Thinkstation P620",
-      role: "Storage + photos + local AI",
-      specs: [
-        "Threadripper PRO 3945WX",
-        "128GB DDR4 ECC",
-        "RTX 2060 Super",
-        "1TB SN770 + 4TB WD Red SSD",
-        "3x 18TB Seagate EXOS",
-        "Supermicro 9300-8i HBA"
+      name: "Corsair 4000D RS PC",
+      role: "Home PC",
+      specs: ["Intel Core i9 14900k", "96GB 6400MHz CL32 DDR5", "2TB WD SN850X", "4TB Crucial P3 Plus", "1TB Samsung 980 Pro",
+        "2TB Seagate Barracuda", "Gigabyte Gaming OC RTX 5090"
       ],
-      platform: ["Proxmox VE"],
-      guests: [
-        {
-          name: "Windows 11",
-          icon: "windows-11",
-          sub: "VM",
-          groups: [
-            {
-              label: "Game servers",
-              services: [
-                { name: "MC Server #1", icon: "minecraft" }
-              ]
-            },
-            {
-              label: "Docker",
-              services: [
-                { name: "Immich",     icon: "immich" },
-                { name: "Open WebUI", icon: "open-webui" },
-                { name: "Ollama",     icon: "ollama" }
-              ]
-            }
-          ]
-        },
-        {
-          name: "Unraid",
-          icon: "unraid",
-          sub: "VM",
-          groups: [
-            {
-              label: "Storage",
-              services: [
-                { name: "3x 18TB XFS array", icon: "ugreen-nas" }
-              ]
-            }
-          ]
-        }
-      ]
+      platform: ["Windows 11 Pro"],
     },
 
     {
-      name: "Dell Optiplex Micro 3050",
-      role: "Apps + utilities",
-      specs: ["i5 7500T", "8GB DDR4 SODIMM", "256GB SATA SSD"],
-      platform: ["Linux Mint", "Docker"],
-      groups: [
-        {
-          label: "Docker",
-          services: [
-            { name: "Homepage",  icon: "homepage" },
-            { name: "ConvertX",  icon: "convertx" },
-            { name: "Scrutiny",  icon: "scrutiny" },
-            { name: "Dockpeek",  icon: "dockpeek" },
-            { name: "Mealie",    icon: "mealie" },
-            { name: "Vikunja",   icon: "vikunja" },
-            { name: "Memos",     icon: "memos" },
-            { name: "IT-Tools",     icon: "it-tools" }
-          ]
-        }
-      ]
-    },
-
-        {
-      name: "Dell Optiplex Micro 7020",
-      role: "Game servers + media",
-      specs: ["i5 14500T", "64GB DDR5 SODIMM", "256GB M.2"],
-      platform: ["Linux Mint", "Docker"],
-      groups: [
-        {
-          label: "Bare metal",
-          services: [
-            { name: "MC Server #2", icon: "minecraft" },
-            { name: "MC Server #3", icon: "minecraft" },
-            { name: "Terraria",     icon: "terraria" }
-          ]
-        },
-        {
-          label: "Docker",
-          services: [
-            { name: "Jellyfin", icon: "jellyfin" },
-            { name: "Radarr",   icon: "radarr" },
-            { name: "Sonarr",   icon: "sonarr" },
-            { name: "Prowlarr", icon: "prowlarr" },
-            { name: "qBittorrent", icon: "qbittorrent" },
-            { name: "Autobrr",  icon: "autobrr" },
-            { name: "Gluetun",  icon: "gluetun" }
-          ]
-        }
+      name: "NZXT H5 Flow PC",
+      role: "Apartment PC",
+      specs: ["Intel Core i5 13400F", "32GB 6000MHz CL36 DDR5", "1TB WD Blue SN850", "2TB Samsung 990 EVO Plus", "1TB Samsung 970 EVO Plus",
+       , "Zotac SFF OC RTX 5070 Ti"
       ],
-      flow: ["Prowlarr", "Sonarr / Radarr", "qBittorrent", "Jellyfin"],
-      notes: [
-        "MC servers pinned to P-cores, Jellyfin to E-cores.",
-        "Gluetun is the killswitch, VPN is AirVPN.",
-        "Prowlarr uses Flaresolverr for some indexers.",
-        "Media lives on the P620."
-      ]
+      platform: ["Windows 11"],
     },
 
     {
-      name: "Dell Optiplex Micro 7050",
-      role: "Networking + monitoring",
-      specs: ["i5 6500T", "8GB DDR4 SODIMM", "128GB SATA SSD"],
-      platform: ["Linux Mint", "Docker", "CrowdSec bouncer"],
-      groups: [
-        {
-          label: "Docker",
-          services: [
-            { name: "Nginx Proxy Manager", icon: "nginx-proxy-manager" },
-            { name: "Pi-hole",             icon: "pi-hole" },
-            { name: "Uptime Kuma",         icon: "uptime-kuma" },
-            { name: "CrowdSec",            icon: "crowdsec" }
-          ]
-        }
-      ]
+      name: "Framework 16",
+      role: "Daily Laptop",
+      specs: ["AMD Ryzen AI 7 350", "64GB 5600MHz DDR5 SODIMM", "4TB SN850X", "1TB Patriot Viper 2230 VP4000",
+       , "RTX 5070 8GB"
+      ],
+      platform: ["Windows 11 Pro", "Fedora Workstation"],
+    },
+
+    {
+      name: "Lenovo Thinkpad T480",
+      role: "Fun Laptop",
+      specs: ["i5 8250U", "16GB 2400MHz DDR4 SODIMM", "256GB Samsung SSD"],
+      platform: ["Arch"],
     }
   ]
 };
@@ -304,8 +212,6 @@ function build() {
   HOMELAB.nodes.forEach(n => grid.appendChild(renderNode(n)));
 
   document.getElementById("node-count").textContent = HOMELAB.nodes.length;
-  document.getElementById("service-count").textContent =
-    HOMELAB.nodes.reduce((sum, n) => sum + countServices(n), 0);
 }
 
 document.addEventListener("DOMContentLoaded", build);
