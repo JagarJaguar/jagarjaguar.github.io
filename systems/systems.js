@@ -8,7 +8,7 @@
      specs     - the hardware list
      notes     - anything else worth saying
 
-   If an icon name doesn't exist, it quietly falls back to the first letter.
+   If an icon name doesn't exist, falls back to the first letter.
    ========================================================================== */
 
 const HOMELAB = {
