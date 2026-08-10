@@ -108,6 +108,8 @@ main {
 main h1 {
     margin-top: 0;
     margin-bottom: 0;
+    padding-inline: 10px;
+    text-align: center;
     font-size: 100px;
     font-weight: bold;
     background: linear-gradient(to right, #00ffff, #ff9100);
