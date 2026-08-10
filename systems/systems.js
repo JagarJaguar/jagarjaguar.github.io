@@ -17,7 +17,7 @@ const HOMELAB = {
     {
       name: "Corsair 4000D RS PC",
       role: "Home PC",
-      icon: "corsair",
+      icon: "../icons/corsair-3-logo-png-transparent.png",
       specs: ["Intel Core i9 14900k", "96GB 6400MHz CL32 DDR5", "2TB WD SN850X", "4TB Crucial P3 Plus", "1TB Samsung 980 Pro",
         "2TB Seagate Barracuda", "Gigabyte Gaming OC RTX 5090"
       ],
@@ -29,7 +29,7 @@ const HOMELAB = {
     {
       name: "NZXT H5 Flow PC",
       role: "Apartment PC",
-      icon: "nzxt",
+      icon: "../icons/Nzxt_logo.webp",
       specs: ["Intel Core i5 13400F", "32GB 6000MHz CL36 DDR5", "1TB WD Blue SN850", "2TB Samsung 990 EVO Plus", "1TB Samsung 970 EVO Plus",
         "Zotac SFF OC RTX 5070 Ti"
       ],
@@ -41,7 +41,7 @@ const HOMELAB = {
     {
       name: "Framework 16",
       role: "Daily Laptop",
-      icon: "framework",
+      icon: "https://cdn.jsdelivr.net/gh/selfhst/icons/webp/framework-light.webp",
       specs: ["AMD Ryzen AI 7 350", "64GB 5600MHz DDR5 SODIMM", "4TB SN850X", "1TB Patriot Viper 2230 VP4000",
         "RTX 5070 8GB"
       ],
@@ -70,6 +70,7 @@ const HOMELAB = {
 
 const ICON_BASE = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/";
 
+
 function el(tag, className, text) {
   const node = document.createElement(tag);
   if (className) node.className = className;
@@ -85,7 +86,7 @@ function icon(name, label) {
     return wrap;
   }
   const img = el("img");
-  img.src = ICON_BASE + name + ".webp";
+  img.src = name.includes("/") ? name : ICON_BASE + name + ".webp";
   img.alt = "";
   img.loading = "lazy";
   img.addEventListener("error", () => {
