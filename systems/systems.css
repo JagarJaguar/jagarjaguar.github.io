@@ -432,3 +432,10 @@ body,
 main {
     justify-content: flex-start;
 }
+
+/* Padding for spacing between navbar and the main content */
+
+main {
+    justify-content: flex-start;
+    padding: 20px;
+}

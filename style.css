@@ -98,6 +98,8 @@ main {
     align-items: center;
 }
 
+/* Padding for spacing between navbar and the main content */
+
 .no-homelab {
     justify-content: flex-start;
     padding: 20px;

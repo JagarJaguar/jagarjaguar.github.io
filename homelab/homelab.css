@@ -389,3 +389,10 @@ main > .about-me {
 h2.hl-heading:first-of-type {
     margin-top: 1.4rem;
 }
+
+/* Padding for spacing between navbar and the main content */
+
+main {
+    justify-content: flex-start;
+    padding: 20px;
+}
