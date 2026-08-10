@@ -25,7 +25,7 @@
 
     <main>
         <h1 class="main-header">about me.</h1>
-        <p class="about-me">
+        <p class="about-me" id="about-me-text">
             i hate school a lot btw.
         </p>
 
@@ -73,5 +73,13 @@
             class="web-source">Source Code</a>.
     </footer>
 </body>
+
+<script>
+    const texts = ["i hate school a lot btw.", "hello again.", "you didn't see anything.", "what?", "how about instead of about me it's about YOU!", "who reads these anyways?", "i hate math.",
+        "going bankrupt soon.", "hello bro.", "i LOOOOOOOVE chocolate.", "petah the horse is here.", "ho, ho, MROW!", "no showers since 2010.", "you are under the rest.", "furry", "chud-maxxing"
+    ]
+    const randomIndex = Math.floor(Math.random() * texts.length);
+    document.getElementById('about-me-text').textContent = texts[randomIndex];
+</script>
 
 </html>
