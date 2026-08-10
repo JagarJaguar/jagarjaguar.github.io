@@ -53,7 +53,7 @@ const HOMELAB = {
 
     {
       name: "Lenovo Thinkpad T480",
-      role: "Fun Laptop",
+      role: "Used to mess around with",
       icon: "lenovo",
       specs: ["i5 8250U", "16GB 2400MHz DDR4 SODIMM", "256GB Samsung SSD"],
       platform: [
