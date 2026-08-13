@@ -110,7 +110,7 @@ h2.hl-heading {
     margin-top: 4px;
 }
 
-/* --- Node cards --------------------------------------------------------
+/* Node cards: 
    Columns, not grid. A grid row is as tall as its tallest card, which left a
    dead gap under the short ones. Columns let each card sit right under the
    one above it. i asked claude for that idk what it means but thanks claude. nvm i get it now i re-read it its 4AM*/
