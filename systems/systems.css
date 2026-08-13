@@ -33,7 +33,7 @@ h2.hl-heading {
     color: transparent;
 }
 
-/* --- The path in ------------------------------------------------------- */
+/* The path in */
 
 .hl-edge {
     display: flex;
@@ -80,7 +80,7 @@ h2.hl-heading {
     line-height: 1;
 }
 
-/* --- Notes that apply to every node ------------------------------------ */
+/* Notes that apply to every node  */
 
 .hl-global {
     margin-top: 14px;
@@ -269,7 +269,7 @@ a.hl-service:focus-visible {
     color: var(--hl-cyan);
 }
 
-/* --- Virtual machines nested inside a node ----------------------------- */
+/* Virtual machines nested inside a node */
 
 .hl-guest {
     margin-top: 10px;
@@ -316,7 +316,7 @@ a.hl-service:focus-visible {
     color: rgba(255, 255, 255, 0.55);
 }
 
-/* --- Media flow and per-node notes -------------------------------------- */
+/* Media flow and per-node notes */
 
 .hl-flow {
     margin: 16px 0 0 0;
@@ -342,7 +342,7 @@ a.hl-service:focus-visible {
     margin-top: 4px;
 }
 
-/* --- Small screens ----------------------------------------------------- */
+/* Small screens */
 
 @media (max-width: 760px) {
     .hl-nodes {
@@ -383,7 +383,7 @@ h2.hl-heading:first-of-type {
     text-decoration: none;
 }
 
-/* --- Icons in node headers and platform chips ------------------------- */
+/* Icons in node headers and platform chips*/
 
 .hl-node-head {
     display: flex;

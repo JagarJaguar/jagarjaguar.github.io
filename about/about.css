@@ -31,7 +31,7 @@ h2.ab-heading {
     color: transparent;
 }
 
-/* --- The photo + card -------------------------------------------- */
+/* --- The photo + card */
 
 .ab-card {
     display: flex;
@@ -113,7 +113,7 @@ h2.ab-heading {
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* --- Small screens ------------------------------------------------------ */
+/* Small screens */
 
 @media (max-width: 700px) {
     .ab-card {

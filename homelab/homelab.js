@@ -181,10 +181,6 @@ function icon(name, label) {
   img.src = ICON_BASE + name + ".webp";
   img.alt = "";
   img.loading = "lazy";
-  img.addEventListener("error", () => {
-    wrap.classList.add("hl-icon-fallback");
-    wrap.textContent = label.charAt(0);
-  });
   wrap.appendChild(img);
   return wrap;
 }
