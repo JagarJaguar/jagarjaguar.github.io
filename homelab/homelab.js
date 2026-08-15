@@ -81,7 +81,7 @@ const HOMELAB = {
     {
       name: "Dell Optiplex Micro 3050",
       role: "Apps + utilities",
-      specs: ["i5 7500T", "8GB DDR4 SODIMM", "256GB SATA SSD"],
+      specs: ["i5 7500T", "16GB DDR4 SODIMM", "256GB SATA SSD"],
       platform: ["Linux Mint", "Docker"],
       groups: [
         {
