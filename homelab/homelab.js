@@ -37,7 +37,8 @@ const HOMELAB = {
         "RTX 2060 Super",
         "1TB SN770 + 4TB WD Red SSD",
         "3x 18TB Seagate EXOS",
-        "Supermicro 9300-8i HBA"
+        "Supermicro 9300-8i HBA",
+        "1TB Toshiba HDD (External)"
       ],
       platform: ["Proxmox VE"],
       guests: [
