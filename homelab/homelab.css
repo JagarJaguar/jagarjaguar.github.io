@@ -383,3 +383,18 @@ main {
     justify-content: flex-start;
     padding: 20px;
 }
+
+/* HL Photo CSS */
+
+.hl-photo {
+    flex: 0 0 auto;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: var(--hl-surface-soft, rgba(255, 255, 255, 0.05));
+    margin: 30px 0 0px 0;
+    background-color: var(--hl-surface);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
