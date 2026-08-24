@@ -25,7 +25,8 @@ const HOMELAB = {
   // Things that are true about all nodes.
   globalNotes: [
     "Glances runs on every node for the Homepage widget.",
-    "Dockpeek proxy and Scrutiny run on every node."
+    "Dockpeek proxy and Scrutiny run on every node.",
+    "nebula-sync is used to clone Pi-hole configs."
   ],
 
   nodes: [
@@ -96,7 +97,8 @@ const HOMELAB = {
             { name: "Mealie",    icon: "mealie" },
             { name: "Vikunja",   icon: "vikunja" },
             { name: "Memos",     icon: "memos" },
-            { name: "IT-Tools",     icon: "it-tools" }
+            { name: "IT-Tools",     icon: "it-tools" },
+            { name: "Pi-hole 2",     icon: "pi-hole" }
           ]
         }
       ]
@@ -148,7 +150,7 @@ const HOMELAB = {
           label: "Docker",
           services: [
             { name: "Nginx Proxy Manager", icon: "nginx-proxy-manager" },
-            { name: "Pi-hole",             icon: "pi-hole" },
+            { name: "Pi-hole 1",             icon: "pi-hole" },
             { name: "Uptime Kuma",         icon: "uptime-kuma" },
             { name: "CrowdSec",            icon: "crowdsec" }
           ]
