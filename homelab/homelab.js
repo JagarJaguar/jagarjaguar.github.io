@@ -77,6 +77,19 @@ const HOMELAB = {
               ]
             }
           ]
+        },
+                {
+          name: "Proxmox Datacenter Manager",
+          icon: "proxmox",
+          sub: "LXC",
+          groups: [
+            {
+              label: "",
+              services: [
+                { name: "PVE Monitoring", icon: "synology-vmm" }
+              ]
+            }
+          ]
         }
       ]
     },
