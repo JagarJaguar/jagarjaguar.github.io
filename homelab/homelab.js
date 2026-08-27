@@ -95,6 +95,34 @@ const HOMELAB = {
     },
 
     {
+      name: "Dell Poweredge R610",
+      role: "Testing Node",
+      specs: [
+        "2x Intel Xeon X5675",
+        "96GB DDR3 ECC",
+        "3X 128GB SSDs",
+      ],
+      platform: ["Proxmox VE"],
+      guests: [
+      {
+          name: "Alpine Linux",
+          icon: "alpine-linux",
+          sub: "VM",
+          groups: [
+            /*
+            {
+              label: "",
+              services: [
+                
+              ]
+            }
+            */
+          ]
+        }
+      ]
+    },
+
+    {
       name: "Dell Optiplex Micro 3050",
       role: "Apps + utilities",
       specs: ["i5 7500T", "16GB DDR4 SODIMM", "256GB SATA SSD"],
