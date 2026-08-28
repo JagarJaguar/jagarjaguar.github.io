@@ -185,11 +185,13 @@ const HOMELAB = {
       name: "Dell Optiplex Micro 7050",
       role: "Networking + monitoring",
       specs: ["i5 6500T", "8GB DDR4 SODIMM", "128GB SATA SSD"],
-      platform: ["Linux Mint", "Docker"],
+      platform: ["Linux Mint", "Docker", "CrowdSec bouncer"],
       groups: [
         {
           label: "Docker",
           services: [
+            { name: "Nginx Proxy Manager 1", icon: "nginx-proxy-manager" },
+            { name: "CrowdSec",            icon: "crowdsec" },
             { name: "Pi-hole 1",             icon: "pi-hole" },
             { name: "Uptime Kuma",         icon: "uptime-kuma" },
           ]
@@ -206,7 +208,7 @@ const HOMELAB = {
         {
           label: "Docker",
           services: [
-            { name: "Nginx Proxy Manager", icon: "nginx-proxy-manager" },
+            { name: "Nginx Proxy Manager 2", icon: "nginx-proxy-manager" },
             { name: "CrowdSec",            icon: "crowdsec" }
           ]
         }
