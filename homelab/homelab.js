@@ -201,7 +201,7 @@ const HOMELAB = {
 
     {
       name: "HP Elitedesk 800 G3",
-      role: "DMZ/Networking",
+      role: "DMZ + Networking",
       specs: ["i5 6500T", "8GB DDR4 SODIMM", "256GB SATA SSD"],
       platform: ["Linux Mint", "Docker", "CrowdSec bouncer"],
       groups: [
