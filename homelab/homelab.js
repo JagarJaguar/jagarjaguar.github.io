@@ -139,6 +139,7 @@ const HOMELAB = {
             { name: "Vikunja",   icon: "vikunja" },
             { name: "Memos",     icon: "memos" },
             { name: "IT-Tools",     icon: "it-tools" },
+            { name: "Lubelogger",     icon: "lubelogger" },
             { name: "Pi-hole 2",     icon: "pi-hole" }
           ]
         }
