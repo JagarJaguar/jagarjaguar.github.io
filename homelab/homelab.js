@@ -52,7 +52,7 @@ const HOMELAB = {
             {
               label: "Game servers",
               services: [
-                { name: "MC Server #1", icon: "minecraft" }
+                { name: "MC Server #1 (OFFLINE ATM)", icon: "minecraft" }
               ]
             },
             {
