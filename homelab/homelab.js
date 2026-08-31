@@ -26,7 +26,8 @@ const HOMELAB = {
   globalNotes: [
     "Glances runs on every node for the Homepage widget.",
     "Dockpeek proxy and Scrutiny run on every node.",
-    "nebula-sync is used to clone Pi-hole configs."
+    "nebula-sync is used to clone Pi-hole configs.",
+    "Backrest backs up to a share in Unraid."
   ],
 
   nodes: [
@@ -140,6 +141,7 @@ const HOMELAB = {
             { name: "Memos",     icon: "memos" },
             { name: "IT-Tools",     icon: "it-tools" },
             { name: "Lubelogger",     icon: "lubelogger" },
+            { name: "Backrest",     icon: "backrest" },
             { name: "Pi-hole 2",     icon: "pi-hole" }
           ]
         }
@@ -169,7 +171,8 @@ const HOMELAB = {
             { name: "Prowlarr", icon: "prowlarr" },
             { name: "qBittorrent", icon: "qbittorrent" },
             { name: "Autobrr",  icon: "autobrr" },
-            { name: "Gluetun",  icon: "gluetun" }
+            { name: "Gluetun",  icon: "gluetun" },
+            { name: "Backrest",     icon: "backrest" }
           ]
         }
       ],
@@ -195,6 +198,7 @@ const HOMELAB = {
             { name: "CrowdSec",            icon: "crowdsec" },
             { name: "Pi-hole 1",             icon: "pi-hole" },
             { name: "Uptime Kuma",         icon: "uptime-kuma" },
+            { name: "Backrest",     icon: "backrest" }
           ]
         }
       ]
