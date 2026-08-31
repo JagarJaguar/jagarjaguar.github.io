@@ -61,7 +61,8 @@ const HOMELAB = {
               services: [
                 { name: "Immich",     icon: "immich" },
                 { name: "Open WebUI", icon: "open-webui" },
-                { name: "Ollama",     icon: "ollama" }
+                { name: "Ollama",     icon: "ollama" },
+                { name: "Backrest", icon: "backrest"}
               ]
             }
           ]
