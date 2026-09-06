@@ -102,6 +102,7 @@ const HOMELAB = {
       specs: [
         "2x Intel Xeon X5675",
         "96GB DDR3 ECC",
+        "1TB Samsung 870 EVO",
         "2X 128GB SSDs",
       ],
       platform: ["Proxmox VE"],

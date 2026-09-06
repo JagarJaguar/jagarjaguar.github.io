@@ -42,7 +42,7 @@ const HOMELAB = {
       name: "Framework 16",
       role: "Daily Laptop",
       icon: "https://cdn.jsdelivr.net/gh/selfhst/icons/webp/framework-light.webp",
-      specs: ["AMD Ryzen AI 7 350", "64GB 5600MHz DDR5 SODIMM", "4TB SN850X", "1TB Patriot Viper 2230 VP4000",
+      specs: ["AMD Ryzen AI 7 350", "64GB 5600MHz DDR5 SODIMM", "4TB SN850X", "2TB Corsair MP600 Mini",
         "RTX 5070 8GB"
       ],
       platform: [
