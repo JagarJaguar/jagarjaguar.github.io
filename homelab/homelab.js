@@ -19,7 +19,8 @@ const HOMELAB = {
     { name: "Cloudflare DNS",      icon: "cloudflare", note: "proxied" },
     { name: "Ubiquiti Dream Machine Pro",      icon: "ubiquiti",       note: "router + firewall" },
     { name: "NETGEAR GS724TPv2",   icon: "netgear",    note: "switch" },
-    { name: "Access Points 1 & 2",   icon: "ubiquiti-unifi",    note: "2x U7 Pro XG" }
+    { name: "Access Points 1 & 2",   icon: "ubiquiti-unifi",    note: "2x U7 Pro XG" },
+    { name: "AC Mesh",   icon: "ubiquiti-unifi",    note: "Ubiquiti AC Mesh" }
   ],
 
   // Things that are true about all nodes.
