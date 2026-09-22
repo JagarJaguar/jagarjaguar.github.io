@@ -54,7 +54,8 @@ const HOMELAB = {
             {
               label: "Game servers",
               services: [
-                { name: "MC Server #1 (OFFLINE)", icon: "minecraft" }
+                { name: "MC Server #1 (OFFLINE)", icon: "minecraft" },
+                { name: "Discord Bot", icon: "discord"}
               ]
             },
             {
@@ -76,7 +77,8 @@ const HOMELAB = {
             {
               label: "Storage",
               services: [
-                { name: "3x 18TB XFS array", icon: "ugreen-nas" }
+                { name: "3x 18TB XFS array", icon: "ugreen-nas" },
+                { name: "Nextcloud", icon: "nextcloud"}
               ]
             }
           ]
