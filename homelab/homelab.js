@@ -15,12 +15,12 @@ const HOMELAB = {
 
   // The path from the internet to the switch.
   edge: [
-    { name: "Internet",            icon: "librewolf",   note: "homelab domain" },
-    { name: "Cloudflare DNS",      icon: "cloudflare", note: "proxied" },
-    { name: "Ubiquiti Dream Machine Pro",      icon: "ubiquiti",       note: "router + firewall" },
-    { name: "NETGEAR GS724TPv2",   icon: "netgear",    note: "switch" },
-    { name: "Access Points 1 & 2",   icon: "ubiquiti-unifi",    note: "2x U7 Pro XG" },
-    { name: "AC Mesh",   icon: "ubiquiti-unifi",    note: "Ubiquiti AC Mesh" }
+    { name: "Internet", icon: "librewolf", note: "homelab domain" },
+    { name: "Cloudflare DNS", icon: "cloudflare", note: "proxied" },
+    { name: "Ubiquiti Dream Machine Pro", icon: "ubiquiti", note: "router + firewall" },
+    { name: "NETGEAR GS724TPv2", icon: "netgear", note: "switch" },
+    { name: "Access Points 1 & 2", icon: "ubiquiti-unifi", note: "2x U7 Pro XG" },
+    { name: "AC Mesh", icon: "ubiquiti-unifi", note: "Ubiquiti AC Mesh" }
   ],
 
   // Things that are true about all nodes.
@@ -55,16 +55,16 @@ const HOMELAB = {
               label: "Game servers",
               services: [
                 { name: "MC Server #1 (OFFLINE)", icon: "minecraft" },
-                { name: "Discord Bot", icon: "discord"}
+                { name: "Discord Bot", icon: "discord" }
               ]
             },
             {
               label: "Docker",
               services: [
-                { name: "Immich",     icon: "immich" },
+                { name: "Immich", icon: "immich" },
                 { name: "Open WebUI", icon: "open-webui" },
-                { name: "Ollama",     icon: "ollama" },
-                { name: "Backrest", icon: "backrest"}
+                { name: "Ollama", icon: "ollama" },
+                { name: "Backrest", icon: "backrest" }
               ]
             }
           ]
@@ -75,15 +75,21 @@ const HOMELAB = {
           sub: "VM",
           groups: [
             {
+              label: "Docker",
+              services: [
+                { name: "Nextcloud", icon: "nextcloud" },
+                { name: "Restic Server", icon: "restic" }
+              ]
+            },
+            {
               label: "Storage",
               services: [
-                { name: "3x 18TB XFS array", icon: "ugreen-nas" },
-                { name: "Nextcloud", icon: "nextcloud"}
+                { name: "3x 18TB XFS array", icon: "ugreen-nas" }
               ]
             }
           ]
         },
-                {
+        {
           name: "Proxmox Datacenter Manager",
           icon: "proxmox",
           sub: "LXC",
@@ -110,7 +116,7 @@ const HOMELAB = {
       ],
       platform: ["Proxmox VE"],
       guests: [
-      {
+        {
           name: "Alpine Linux",
           icon: "alpine-linux",
           sub: "VM",
@@ -137,23 +143,23 @@ const HOMELAB = {
         {
           label: "Docker",
           services: [
-            { name: "Homepage",  icon: "homepage" },
-            { name: "ConvertX",  icon: "convertx" },
-            { name: "Scrutiny",  icon: "scrutiny" },
-            { name: "Dockpeek",  icon: "dockpeek" },
-            { name: "Mealie",    icon: "mealie" },
-            { name: "Vikunja",   icon: "vikunja" },
-            { name: "Memos",     icon: "memos" },
-            { name: "IT-Tools",     icon: "it-tools" },
-            { name: "Lubelogger",     icon: "lubelogger" },
-            { name: "Backrest",     icon: "backrest" },
-            { name: "Pi-hole 2",     icon: "pi-hole" }
+            { name: "Homepage", icon: "homepage" },
+            { name: "ConvertX", icon: "convertx" },
+            { name: "Scrutiny", icon: "scrutiny" },
+            { name: "Dockpeek", icon: "dockpeek" },
+            { name: "Mealie", icon: "mealie" },
+            { name: "Vikunja", icon: "vikunja" },
+            { name: "Memos", icon: "memos" },
+            { name: "IT-Tools", icon: "it-tools" },
+            { name: "Lubelogger", icon: "lubelogger" },
+            { name: "Backrest", icon: "backrest" },
+            { name: "Pi-hole 2", icon: "pi-hole" }
           ]
         }
       ]
     },
 
-        {
+    {
       name: "Dell Optiplex Micro 7020",
       role: "Game servers + media",
       specs: ["i5 14500T", "64GB DDR5 SODIMM", "256GB M.2"],
@@ -164,20 +170,20 @@ const HOMELAB = {
           services: [
             { name: "MC Server #2", icon: "minecraft" },
             { name: "MC Server #3", icon: "minecraft" },
-            { name: "Terraria",     icon: "terraria" }
+            { name: "Terraria", icon: "terraria" }
           ]
         },
         {
           label: "Docker",
           services: [
             { name: "Jellyfin", icon: "jellyfin" },
-            { name: "Radarr",   icon: "radarr" },
-            { name: "Sonarr",   icon: "sonarr" },
+            { name: "Radarr", icon: "radarr" },
+            { name: "Sonarr", icon: "sonarr" },
             { name: "Prowlarr", icon: "prowlarr" },
             { name: "qBittorrent", icon: "qbittorrent" },
-            { name: "Autobrr",  icon: "autobrr" },
-            { name: "Gluetun",  icon: "gluetun" },
-            { name: "Backrest",     icon: "backrest" }
+            { name: "Autobrr", icon: "autobrr" },
+            { name: "Gluetun", icon: "gluetun" },
+            { name: "Backrest", icon: "backrest" }
           ]
         }
       ],
@@ -200,10 +206,10 @@ const HOMELAB = {
           label: "Docker",
           services: [
             { name: "Nginx Proxy Manager 1", icon: "nginx-proxy-manager" },
-            { name: "CrowdSec",            icon: "crowdsec" },
-            { name: "Pi-hole 1",             icon: "pi-hole" },
-            { name: "Uptime Kuma",         icon: "uptime-kuma" },
-            { name: "Backrest",     icon: "backrest" }
+            { name: "CrowdSec", icon: "crowdsec" },
+            { name: "Pi-hole 1", icon: "pi-hole" },
+            { name: "Uptime Kuma", icon: "uptime-kuma" },
+            { name: "Backrest", icon: "backrest" }
           ]
         }
       ]
@@ -219,7 +225,7 @@ const HOMELAB = {
           label: "Docker",
           services: [
             { name: "Nginx Proxy Manager 2", icon: "nginx-proxy-manager" },
-            { name: "CrowdSec",            icon: "crowdsec" }
+            { name: "CrowdSec", icon: "crowdsec" }
           ]
         }
       ]
