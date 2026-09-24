@@ -52,6 +52,16 @@ const HOMELAB = {
     },
 
     {
+      name: 'Apple MacBook Pro 14"',
+      role: "Daily-ish Laptop #2",
+      icon: "apple-light",
+      specs: ["M5 Pro 15c/16c", "24GB RAM", "1TB SSD"],
+      platform: [
+        { name: "macOS", icon: "https://dashboardicons.com/api/icons/external/simpleicons/macos/brand.png" },
+      ],
+    },
+
+    {
       name: "Lenovo Thinkpad T480",
       role: "Used to mess around with",
       icon: "lenovo",
